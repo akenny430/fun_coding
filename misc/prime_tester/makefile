@@ -1,13 +1,10 @@
-CC=clang++
-INCLUDES=
-CFLAGS=-g -Wall
-LDFLAGS=-g
-LDLIBS=
+CXX=clang++
+CXXFLAGS=-g -Wall -std=c++2a
 
 EXECUTABLE=prime
 
 $(EXECUTABLE): main.o miller_rabin.o messages.o
-	$(CC) $(LDFLAGS) $^ $(LDLIBS) -o $@
+	$(CXX) $(CXXFLAGS) $^ -o $@
 
 main.o: main.cpp miller_rabin.hpp messages.hpp
 
