@@ -2,4 +2,4 @@
 *.o
 
 # any executables
-prime
+*.out
