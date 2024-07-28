@@ -2,12 +2,16 @@
 #define PRIME_H 
 
 /**
- * Implements Miller-Rabin prime tester with 100 random itterations
+ * @brief
+ * Checks if a number is prime.
  * 
- * @param n number to test for prime
+ * @param n number to test for prime.
  * 
- * @returns 1 indicating number is prime, 0 if number is not prime
+ * @returns true if number is prime, else false.
+ * 
+ * @details
+ * Implements Miller-Rabin prime tester with S=100 iterations.
  */
-int is_prime(int n);
+bool is_prime(int n);
 
 #endif

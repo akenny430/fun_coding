@@ -1,20 +1,34 @@
-#include "messages.hpp"
 #include <stdio.h>
 
-// auxiliary function to print out a number being prime
+#include "messages.hpp"
+
+/**
+ * @brief
+ * Prints "prime" in green text.
+ * 
+ * @param input number to print.
+*/
 void print_prime(int input)
 {
-    printf("%10d is \033[32mprime\033[0m\n", input);
+    printf("%10d : \033[32mprime\033[0m\n", input);
 }
 
-// auxiliary function to print out that the number is not prime
+/**
+ * @brief
+ * Prints "not prime" in orange text.
+ * 
+ * @param input number to print.
+*/
 void print_composite(int input)
 {
-    printf("%10d is \033[38;5;208mnot prime\033[0m\n", input);
+    printf("%10d : \033[38;5;208mnot prime\033[0m\n", input);
 }
 
-// function to print out whether number is prime or not
-void print_message(int input, int is_prime)
+/**
+ * @brief
+ * Implements print_message.
+*/
+void print_message(int input, bool is_prime)
 {
     if (is_prime)
     {

@@ -2,11 +2,12 @@
 #define MESSAGES_H
 
 /**
- * Print out whether a number is prime or not
+ * @brief
+ * Auxiliary function for printing result of prime function.
  * 
- * @param input: number to test 
- * @param is_prime: integer indicating whether the number is prime (1) or not (0)
+ * @param input number to test.
+ * @param is_prime true if number is prime, else false.
  */
-void print_message(int input, int is_prime);
+void print_message(int input, bool is_prime);
 
-#endif 
+#endif
